@@ -1,16 +1,25 @@
 <div class="container mt-3">
     <div class="row row-cols-1 row-cols-md-3 g-4 mgtop-2">
-      <div class="col" *ngFor="let proj of projects">
-        <div class="card h-100">
-          <img src="./Designer.jpeg" class="card-img-top" alt="{{proj.name}}">
-          <div class="card-body">
-            <h5 class="card-title">{{proj.name}}</h5>
-            <p class="card-text">{{proj.description}}</p>
-            <p class="card-text"><strong>Language: </strong>{{proj.language}}</p>
-            <a href="{{proj.clone_url}}" class="btn btn-primary">View Project</a>
-          </div>
+        <div class="col" *ngFor="let proj of projects">
+            <div class="card text-center h-100">
+                <img
+                    src="./Designer.jpeg"
+                    class="card-img-top"
+                    alt="{{ proj.name }}"
+                />
+                <div class="card-body">
+                    <h5 class="card-title">{{ proj.name }}</h5>
+                    <p class="card-text">{{ proj.description }}</p>
+                    <p class="card-text">
+                        <strong>Language: </strong>{{ proj.language }}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ proj.clone_url }}" class="card-link"
+                        >Vedi progetto</a
+                    >
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 </div>
-  

@@ -1,40 +1,102 @@
-<nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">
-        <img src="./MM-round.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/info">Info</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/projects">My Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/home">Home</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" routerLink="/">
+            <img
+                src="./MM-round.png"
+                alt="Logo"
+                width="30"
+                height="30"
+                class="d-inline-block align-text-top"
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/info">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/projects"
+                        >Progetti</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" routerLink="/home">Home</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  
-  <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-      <strong>WorkingProgress:</strong> Sito in sviluppo.
-  </div>
+</nav>
 
-  <div style="min-height: 100vh">
+<div
+    class="alert alert-warning alert-dismissible fade show text-center"
+    role="alert"
+>
+    <strong>WorkingProgress:</strong> Sito in sviluppo.
+</div>
+
+<div style="min-height: 100vh">
     <router-outlet></router-outlet>
-  </div>
+</div>
 
-  <footer class="py-3 my-4 mb-0 bg-dark" data-bs-theme="dark">
+<footer class="py-3 bg-dark mt-3 mb-0" data-bs-theme="dark" role="contentinfo">
+    <!-- Navigazione principale -->
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a routerLink="/info" class="nav-link px-2 text-body-secondary">Info</a></li>
-      <li class="nav-item"><a routerLink="/projects" class="nav-link px-2 text-body-secondary">My projects</a></li>
-      <li class="nav-item"><a routerLink="/home" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item">
+            <a routerLink="/info" class="nav-link px-2 text-light">Info</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/projects" class="nav-link px-2 text-light"
+                >Progetti</a
+            >
+        </li>
+        <li class="nav-item">
+            <a routerLink="/home" class="nav-link px-2 text-light">Home</a>
+        </li>
     </ul>
-    <p class="text-center text-body-secondary">© 2024 MM, Inc</p>
-  </footer>
+
+    <!-- Contenuto del footer -->
+    <div
+        class="d-flex justify-content-between align-items-center text-light px-3"
+    >
+        <div class="text-left">
+            <p class="mb-0">© 2024 MM, Inc</p>
+        </div>
+
+        <div class="text-right">
+            <h5 class="mb-0">Contatti</h5>
+            <!-- Aggiunta di mb-0 per un margine uniforme -->
+            <ul class="nav flex-column mb-0">
+                <!-- Aggiunta di mb-0 per rimuovere margini -->
+                <li class="nav-item">
+                    <p class="mb-0">
+                        tel:
+                        <a href="tel:+3774160900" class="text-light"
+                            >377 416 0900</a
+                        >
+                    </p>
+                </li>
+                <li class="nav-item">
+                    <p class="mb-0">
+                        email:
+                        <a
+                            href="mailto:marco.massagrande00&#64;gmail.com"
+                            class="text-light"
+                            >marco.massagrande00&#64;gmail.com</a
+                        >
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

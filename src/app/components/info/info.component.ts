@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Info } from '../../interfaces/info';
-import { INFOS } from '../../mocks/mock-info';
 
 @Component({
   selector: 'app-info',
@@ -8,5 +6,5 @@ import { INFOS } from '../../mocks/mock-info';
   styleUrl: './info.component.css'
 })
 export class InfoComponent {
-  cardData: Info[] = INFOS;
+
 }

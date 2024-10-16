@@ -10,7 +10,11 @@
                 /></a>
                 <div class="card-body border-top">
                     <h5 class="card-title">{{ proj.name }}</h5>
+                    @if(proj.description) {
                     <p class="card-text">{{ proj.description }}</p>
+                    } @else {
+                    <p class="card-text">N\D</p>
+                    }
                     <p class="card-text">
                         <strong>Language: </strong>{{ proj.language }}
                     </p>

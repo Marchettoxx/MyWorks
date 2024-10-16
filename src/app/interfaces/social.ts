@@ -1,7 +1,6 @@
 export interface Social {
     imgSrc: string;
     title: string;
-    text: string;
+    bio: string;
     link: string;
-    lastUpdate: string;
 }

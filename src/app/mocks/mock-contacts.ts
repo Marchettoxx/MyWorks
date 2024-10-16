@@ -1,10 +1,10 @@
-import { Info } from "../interfaces/info";
+import { Contact } from "../interfaces/contact";
 
-export const INFOS: Info[] = [
+export const CONTACTS: Contact[] = [
     {
-        imgSrc: "./profile.png",
+        imgSrc: "./linkedin-profilo.jpg",
         title: "Linkedin",
-        text: "Hi, I'm Marco Massagrande, a student at the University of Verona.",
+        text: "Hi, I'm Marco, and here is my Linkedin profile.",
         link: "https://www.linkedin.com/in/marco-massagrande-001940299",
         lastUpdate: "11/10/2024",
     },

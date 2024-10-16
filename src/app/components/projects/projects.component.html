@@ -2,20 +2,21 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 mgtop-2">
         <div class="col" *ngFor="let proj of projects">
             <div class="card text-center h-100 bg-light text-dark">
-                <img
-                    src="./Designer.jpeg"
-                    class="card-img-top"
-                    alt="{{ proj.name }}"
-                />
-                <div class="card-body">
+                <a href="{{ proj.clone_url }}" class="card-link"
+                    ><img
+                        src="./Designer.jpeg"
+                        class="card-img-top"
+                        alt="{{ proj.name }}"
+                /></a>
+                <div class="card-body border-top">
                     <h5 class="card-title">{{ proj.name }}</h5>
                     <p class="card-text">{{ proj.description }}</p>
                     <p class="card-text">
                         <strong>Language: </strong>{{ proj.language }}
                     </p>
                 </div>
-                <div class="card-footer">
-                    <a href="{{ proj.clone_url }}" class="card-link"
+                <div class="card-footer bg-light">
+                    <a href="{{ proj.clone_url }}" class="card-link text-dark"
                         >Vedi progetto</a
                     >
                 </div>

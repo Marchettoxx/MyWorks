@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { Info } from "../../interfaces/info";
-import { INFOS } from "../../mocks/mock-info";
+import { Contact } from "../../interfaces/contact";
+import { CONTACTS } from "../../mocks/mock-contacts";
 
 @Component({
     selector: "app-contacts",
@@ -8,5 +8,5 @@ import { INFOS } from "../../mocks/mock-info";
     styleUrl: "./contacts.component.css",
 })
 export class ContactsComponent {
-    cardData: Info[] = INFOS;
+    cardData: Contact[] = CONTACTS;
 }

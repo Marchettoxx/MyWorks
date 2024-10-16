@@ -1,6 +1,6 @@
-import { Contact } from "../interfaces/contact";
+import { Social } from "../interfaces/social";
 
-export const CONTACTS: Contact[] = [
+export const SOCIALS: Social[] = [
     {
         imgSrc: "./linkedin-profilo.jpg",
         title: "Linkedin",

@@ -15,16 +15,19 @@ export class SocialComponent {
     constructor(private socialService: SocialService) {}
 
     ngOnInit() {
-        this.socialService.getGitHubData().subscribe(
-            (data: Github) =>
-                (this.cardData = [
-                    <Social>{
-                        title: data.social_name,
-                        imgSrc: data.avatar_url,
-                        bio: data.bio,
-                        link: data.html_url,
-                    },
-                ])
-        );
+        let temp = SOCIALS.filter((val) => val.title != "Github");
+        this.socialService.getGitHubData().subscribe((data: Github) => {
+            temp.push(<Social>{
+                title: data.social_name,
+                imgSrc: data.avatar_url,
+                bio: data.bio,
+                link: data.html_url,
+            });
+            this.cardData = temp;
+        });
+
+        this.socialService
+            .getDataFromBackEnd()
+            .subscribe((data) => console.log("Dati ottenuti: ", data));
     }
 }

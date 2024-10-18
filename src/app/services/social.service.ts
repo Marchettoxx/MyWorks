@@ -23,4 +23,12 @@ export class SocialService {
                 })
             );
     }
+
+    getDataFromBackEnd(): Observable<any> {
+        return this.httpClient.get(`http://localhost:3000/`).pipe(
+            map((data: any) => {
+                return data;
+            })
+        );
+    }
 }
